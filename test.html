@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="pai">
+      <img id="item" class="item">
+        olaaaa
+      </img>
+    </section>
+    <script>
+      let images = [
+        {
+          image: "http://",
+          height: 500,
+          width: 750
+        },
+        {
+          image: "http://",
+          height: 150,
+          width: 300
+        },
+        {
+          image: "http://",
+          height: 800,
+          width: 1000
+        },
+        {
+          image: "http://",
+          height: 500,
+          width: 750
+        },
+        {
+          image: "http://",
+          height: 150,
+          width: 300
+        },
+        {
+          image: "http://",
+          height: 800,
+          width: 1000
+        }
+      ];
+
+      let pai = document.querySelector("pai");
+      let item = document.querySelector("item");
+
+      images.forEach(img => {
+        item.src = img.image
+      });
+    </script>
+  </body>
+</html>
